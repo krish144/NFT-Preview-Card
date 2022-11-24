@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-softBlue: hsl(215, 51%, 70%);
+    --color-cyan: hsl(178, 100%, 50%);
+    --color-main: hsl(217, 54%, 11%);
+    --color-card: hsl(216, 50%, 16%);
+    --color-line: hsl(215, 32%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-main);
+    display:grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0%;
+}
+
+p{
+    color: var(--color-softBlue);
+}
+
+
+.main-card{
+    max-width: 300px;
+    height: auto;
+    background-color: var(--color-card);
+    padding:25px;
+    border-radius: 25px;
+}
+
+#main-img{
+    position: relative;
+     width: 100%;
+     border-radius: 10px;
+}
+
+#main{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#view{ 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0%;
+    background-color:  hsl(178, 100%, 50%,0.5);
+    border-radius: 12px;
+    transition: ease-in-out;
+}
+
+#main:hover+#view{
+     display: flex;
+     
+}
+
+#heading{
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.hover:hover{
+    color: var(--color-cyan) !important;
+    cursor: pointer;
+}
+
+#paragraph{
+    font-size: 18px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#eth{
+    
+    color: var(--color-cyan) !important;
+}
+
+hr{
+    background-color: #1e2f48;
+    border: 1.5px solid #1e2f48;
+    border-radius: 12px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+}
+
+#footer img{
+    margin-right: 15px;
+}
+
+#footer span{
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+#avthar{
+    width: 37px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+@media(max-width:375px){
+    .main-card{
+      padding: 15px;
+    }
+}
